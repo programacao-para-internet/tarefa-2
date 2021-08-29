@@ -1,191 +1,105 @@
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
 .container {
     display: grid;
     grid-template-columns: 0.8fr 1.4fr 0.8fr;
-    grid-template-rows: 0.2fr 0.9fr 1.9fr;
+    grid-template-rows: 0.4fr 0.9fr 1.9fr;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: column;
     grid-template-areas:
       "Cidade fatec Site-oficial"
-      "Img Search- Img2"
-      "menu carrosel imgs";
+      "Img menu Img2"
+      "Search carrosel imgs";
   }
   
-  .Search- { grid-area: Search-; }
+  .Cidade { 
+    background-color: rgb(59, 60, 61);
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+   }
   
-  .Img { grid-area: Img; }
+  .fatec { 
+    background-color: rgb(59, 60, 61);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center
+   }
+
+   .Site-oficial { 
+    background-color: rgb(59, 60, 61);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center
+   }
   
-  .Img2 { grid-area: Img2; }
+   .Img { 
+     grid-area: Img;
+     display: flex;
+     align-items: center;
+     justify-content: center
+  }
+
+   .logo{
+     width: 250px;
+     height: 120px;
+   }
+   
+   .Img2 { grid-area: Img2;
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+   .logo-franco{
+    width: 200px;
+    height: 110px;
+   }
+
+   .menu { grid-area: menu;
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+
+  .btn{
+    background-color: rgb(66, 65, 65);
+    width: 100px;
+    height: 30px;
+    padding: 0px;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid;
+    cursor: pointer;
+  }
+
+  .btn:hover{
+    background-color: rgb(36, 35, 35);
+  }
+  
+
+
+  .Search { 
+    grid-area: Search;
+
+   }
+  
   
   .carrosel { grid-area: carrosel; }
   
   .imgs { grid-area: imgs; }
   
-  .menu { grid-area: menu; }
-  
-  .Cidade { grid-area: Cidade; }
-  
-  .fatec { grid-area: fatec; }
-  
-  .Site-oficial { grid-area: Site-oficial; }
 
- .btn-group,
-.btn-group-vertical {
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  vertical-align: middle;
-}
 
-.btn-group > .btn,
-.btn-group-vertical > .btn {
-  position: relative;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 1 auto;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
-}
 
-.btn-group > .btn:hover,
-.btn-group-vertical > .btn:hover {
-  z-index: 2;
-}
-
-.btn-group > .btn:focus, .btn-group > .btn:active, .btn-group > .btn.active,
-.btn-group-vertical > .btn:focus,
-.btn-group-vertical > .btn:active,
-.btn-group-vertical > .btn.active {
-  z-index: 2;
-}
-
-.btn-group .btn + .btn,
-.btn-group .btn + .btn-group,
-.btn-group .btn-group + .btn,
-.btn-group .btn-group + .btn-group,
-.btn-group-vertical .btn + .btn,
-.btn-group-vertical .btn + .btn-group,
-.btn-group-vertical .btn-group + .btn,
-.btn-group-vertical .btn-group + .btn-group {
-  margin-left: -1px;
-}
-
-.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
-    border-radius: 0;
-  }
-  
-  .btn-group > .btn:first-child {
-    margin-left: 0;
-  }
-  
-  .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-  }
-  
-  .btn-group > .btn:last-child:not(:first-child),
-  .btn-group > .dropdown-toggle:not(:first-child) {
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-  }
-  
-  .btn-group > .btn-group {
-    float: left;
-  }
-  
-  .btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
-    border-radius: 0;
-  }
-  
-  .btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child,
-  .btn-group > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-  }
-  
-  .btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child {
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-  }
-  
-  .btn-group .dropdown-toggle:active,
-  .btn-group.open .dropdown-toggle {
-    outline: 0;
-  }
-
-  .btn-group-vertical {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  
-  .btn-group-vertical .btn,
-  .btn-group-vertical .btn-group {
-    width: 100%;
-  }
-  
-  .btn-group-vertical > .btn + .btn,
-  .btn-group-vertical > .btn + .btn-group,
-  .btn-group-vertical > .btn-group + .btn,
-  .btn-group-vertical > .btn-group + .btn-group {
-    margin-top: -1px;
-    margin-left: 0;
-  }
-  
-  .btn-group-vertical > .btn:not(:first-child):not(:last-child) {
-    border-radius: 0;
-  }
-  
-  .btn-group-vertical > .btn:first-child:not(:last-child) {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-  
-  .btn-group-vertical > .btn:last-child:not(:first-child) {
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-  }
-  
-  .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn {
-    border-radius: 0;
-  }
-  
-  .btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child,
-  .btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-  
-  .btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child {
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-  }
-
-  .btn-lg, .btn-group-lg > .btn {
-    padding: 0.75rem 1.5rem;
-    font-size: 1.25rem;
-    border-radius: 0.3rem;
-  }
-  
-  .btn-sm, .btn-group-sm > .btn {
-    padding: 0.25rem 0.5rem;
-    font-size: 0.875rem;
-    border-radius: 0.2rem;
-  }
-
-  
+   
