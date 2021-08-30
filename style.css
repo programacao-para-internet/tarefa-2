@@ -41,7 +41,8 @@
       "materia materia materia"
       "materia materia materia"
       "materia materia materia"; 
-    grid-area: materias; 
+    grid-area: materias;
+    background-color: #333;
   }
   .materia1 { grid-area: materia; }
   .materia2 { grid-area: materia; }
