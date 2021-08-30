@@ -103,7 +103,7 @@
      display: flex;
      align-items: center;
      justify-content: center;
-     background-color: rgb(34, 34, 34);
+     background-color: rgba(150,201,61,1);
   }
 
    .logo{
@@ -123,7 +123,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(34, 34, 34);
+    background-color: rgba(150,201,61,1);
   }
    .logo-franco{
     width: 200px;
@@ -137,7 +137,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(34, 34, 34);
+    background-color: rgba(150,201,61,1);
   }
 
   .btn{
