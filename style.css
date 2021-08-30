@@ -11,45 +11,52 @@
   html, body{
     width: 100%;  
     height: 100%;
-    background-color: rgb(34, 34, 34);
+    background-color: rgb(59, 60, 61);
   }
 
   .container {
-    display: grid; 
-    grid-auto-flow: column; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    
-    gap: 0px 0px; 
-    grid-template-areas: 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0fr 0fr 0.5fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: column;
+    grid-template-areas:
       "Cidade fatec Site-oficial"
       "Img menu Img2"
-      "materias materias materias"; 
+      "fundo fundo fundo";
   }
+  
   .Cidade { grid-area: Cidade; }
+  
   .fatec { grid-area: fatec; }
+  
   .Site-oficial { grid-area: Site-oficial; }
+  
   .Img { grid-area: Img; }
+  
   .menu { grid-area: menu; }
+  
   .Img2 { grid-area: Img2; }
-  .materias {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1.4fr 1.3fr 1.4fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "materia materia materia"
-      "materia materia materia"
-      "materia materia materia"; 
-    grid-area: materias; 
+  
+  .fundo {
+    display: grid;
+    grid-template-columns: 0.6fr 1.7fr 0.7fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". materias ."
+      ". materias ."
+      ". materias .";
+    grid-area: fundo;
   }
-  .materia1 { grid-area: materia; }
-  .materia2 { grid-area: materia; }
-  .materia3 { grid-area: materia; }
-
+  
+  .materias { grid-area: materias; }
+  
   a{
     text-decoration: none;
-    color: rgba(150,201,61,1)
+    color: rgb(59, 60, 61);
   }
 
   h1{
@@ -75,7 +82,7 @@
   .Cidade { 
     background-color: rgb(59, 60, 61);
     color: white;
-    height: 60px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center
@@ -84,6 +91,7 @@
   .fatec { 
     background-color: rgb(59, 60, 61);
     color: white;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center
@@ -91,19 +99,20 @@
 
    .Site-oficial { 
     background-color: rgb(59, 60, 61);
+    height: 50px;
     color: white;
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
    }
   
    .Img { 
-     grid-area: Img;
+     
      height: 100%;
      display: flex;
      align-items: center;
      justify-content: center;
-     background-color: rgba(150,201,61,1);
+     background: rgb(119, 158, 51);
   }
 
    .logo{
@@ -119,7 +128,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(150,201,61,1);
+    background: rgb(119, 158, 51);
   }
    .logo-franco{
     width: 200px;
@@ -129,11 +138,11 @@
    .menu { 
     grid-area: menu;
     height: 100%;
-    width: 1000px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(150,201,61,1);
+    background: rgb(119, 158, 51);
   }
 
   .btn{
@@ -147,19 +156,18 @@
     cursor: pointer;
   }
 
-  .btn:hover{
-    background: linear-gradient(to bottom, rgba(28, 44, 42, 0.5), rgba(150,201,61,1));
-  }
 
   .materias{
-    display: flex;
+    height: 100%;
     width: 100%;
     justify-content: space-around;
+    align-items: center;
+    justify-content: center;
   }
 
   .materia{
-    width: 400px;
-    height: 500px;
+    width: 350px;
+    height: 350px;
     padding: 2rem 1rem;
     background: #fff;
     position: relative;
@@ -167,7 +175,8 @@
     align-items: flex-end;
     box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
     transition: 0.5s ease-in-out;
-    margin-top: 100px;
+    margin-top: 70px;
+    
     
   }
   
@@ -195,8 +204,8 @@
   }
 
   .materia img{
-    width: 400px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -268,12 +277,7 @@
     bottom: 0;
 }
 
-.materias2{
-  display: flex;
-  width: 100%;
-  height: 1000px;
-  justify-content: space-around;
-}
+
 
 
 .wrapper{
@@ -352,7 +356,7 @@
 .wrapper .blog:hover span,
 .wrapper .blog:hover .tooltip,
 .wrapper .blog:hover .tooltip:before{
-  background: #376174;
+  background: rgba(150,201,61,1);
 }
 .wrapper .instagram:hover span,
 .wrapper .instagram:hover .tooltip,
@@ -373,7 +377,7 @@
 .wrapper .home:hover span,
 .wrapper .home:hover .tooltip,
 .wrapper .home:hover .tooltip:before{
-  background: #333;
+  background: rgb(31, 31, 31);
 }
 
 
