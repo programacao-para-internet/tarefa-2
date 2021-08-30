@@ -99,7 +99,7 @@
   
    .Img { 
      grid-area: Img;
-     height: 140px;
+     height: 100%;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -107,19 +107,15 @@
   }
 
    .logo{
-     width: 250px;
+     width: 200px;
      height: 120px;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 10px;
    }
-
-   .logo-blog{
-    width: 250px;
-    height: 120px;
-    
-  }
-  
    
    .Img2 { grid-area: Img2;
-    height: 140px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,7 +128,7 @@
 
    .menu { 
     grid-area: menu;
-    height: 140px;
+    height: 100%;
     width: 1000px;
     display: flex;
     align-items: center;
@@ -356,7 +352,7 @@
 .wrapper .blog:hover span,
 .wrapper .blog:hover .tooltip,
 .wrapper .blog:hover .tooltip:before{
-  background: #46C1F6;
+  background: #376174;
 }
 .wrapper .instagram:hover span,
 .wrapper .instagram:hover .tooltip,
@@ -366,12 +362,18 @@
 .wrapper .window:hover span,
 .wrapper .window:hover .tooltip,
 .wrapper .window:hover .tooltip:before{
-  background: #333;
+  background: #763cd3;
 }
 .wrapper .youtube:hover span,
 .wrapper .youtube:hover .tooltip,
 .wrapper .youtube:hover .tooltip:before{
   background: #DE463B;
+}
+
+.wrapper .home:hover span,
+.wrapper .home:hover .tooltip,
+.wrapper .home:hover .tooltip:before{
+  background: #333;
 }
 
 
