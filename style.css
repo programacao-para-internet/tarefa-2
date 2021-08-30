@@ -347,9 +347,9 @@
 .wrapper .facebook:hover .tooltip:before{
   background: #3B5999;
 }
-.wrapper .twitter:hover span,
-.wrapper .twitter:hover .tooltip,
-.wrapper .twitter:hover .tooltip:before{
+.wrapper .blog:hover span,
+.wrapper .blog:hover .tooltip,
+.wrapper .blog:hover .tooltip:before{
   background: #46C1F6;
 }
 .wrapper .instagram:hover span,
@@ -357,9 +357,9 @@
 .wrapper .instagram:hover .tooltip:before{
   background: #e1306c;
 }
-.wrapper .github:hover span,
-.wrapper .github:hover .tooltip,
-.wrapper .github:hover .tooltip:before{
+.wrapper .window:hover span,
+.wrapper .window:hover .tooltip,
+.wrapper .window:hover .tooltip:before{
   background: #333;
 }
 .wrapper .youtube:hover span,
