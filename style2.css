@@ -1,0 +1,441 @@
+body{
+    font-family: sans-serif;   
+    background-color: rgb(48, 45, 45);
+    color: white;
+}
+a{
+  color:white;
+  text-decoration: none;
+}
+/* HEADER FIXO */
+.header-fixo{
+    background-color: rgba(150,201,61,1);
+    color: white;
+    width: 100%;
+}
+
+.cor-botao{
+  color:rgb(48, 45, 45);
+}
+.header{
+    width: 25%;
+}
+.footer{
+    width: 33%;
+}
+.icone{
+    width: 5%;
+}
+.center-text{
+    text-align: center;
+}
+.logo-blog{
+    width: 100px;
+}
+.cinquenta{
+  width: 50%;
+}
+.setenta{
+    width: 70%;
+}
+.data-materia{
+  height: 100px;
+  font-size: 20px;
+}
+.noventa{
+    width: 90%;
+}
+.center-img{
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-materia{
+  max-width:500px;
+  max-height: 300px;
+}
+.texto {
+  position: absolute;
+  color: rgb(48, 45, 45);
+  font-size: 50px;
+  top: 400px;
+  margin-left: 2%;
+  margin-right: 3%;
+  font-style: bold;
+}
+.img-materia{
+  max-width:300px;
+  max-height:200px;
+  width: auto;
+  height: auto; 
+}
+.img-materia-principal{
+  max-width: 500px;
+  max-height: 300px;
+  margin-left: 35%;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+.titulo-materia{
+    margin-top: 0px;
+    font-size: 44px;
+    font-style: bold;
+}
+.inline{
+    display: inline-block;
+}
+.table-materia{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.footer-table{
+  width: 100%;
+  font-size: 24px;
+}
+.linha-branco{
+  height: 25px;
+}
+
+/* COISOS DO KEVIN */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+
+
+  .Cidade { grid-area: Cidade; }
+  .fatec { grid-area: fatec; }
+  .Site-oficial { grid-area: Site-oficial; }
+  .Img { grid-area: Img; }
+  .menu { grid-area: menu; }
+  .Img2 { grid-area: Img2; }
+  .materias {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1.4fr 1.3fr 1.4fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "materia materia materia"
+      "materia materia materia"
+      "materia materia materia"; 
+    grid-area: materias;
+    background-color: #333;
+  }
+  .materia1 { grid-area: materia; }
+  .materia2 { grid-area: materia; }
+  .materia3 { grid-area: materia; }
+
+
+
+  h1{
+    color: #fff;
+    font-size:32px;
+  }
+  .card{
+    color: white;
+    font-size: 20px;
+    padding-top: 0;
+    text-align: justify;
+  }
+
+  p{
+    color: white;
+    font-size: 20px;
+    padding-top: 40px;
+    text-align: justify;
+    font-weight: bold;
+  }
+
+
+
+  .Cidade { 
+    background-color: rgb(59, 60, 61);
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+   }
+  
+  .fatec { 
+    background-color: rgb(59, 60, 61);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center
+   }
+
+   .Site-oficial { 
+    background-color: rgb(59, 60, 61);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center
+   }
+  
+   .Img { 
+     grid-area: Img;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: rgba(150,201,61,1);
+  }
+
+   .logo{
+     width: 200px;
+     height: 120px;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 10px;
+   }
+   
+   .Img2 { grid-area: Img2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    
+  }
+   .logo-franco{
+    width: 200px;
+    height: 110px;
+   }
+
+   .menu { 
+    grid-area: menu;
+    height: 100%;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(150,201,61,1);
+  }
+
+  .materias{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .materia{
+    
+    height: 500px;
+    padding: 2rem 1rem;
+    background: #fff;
+    position: relative;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+    transition: 0.5s ease-in-out;
+  }
+  
+  
+  .materia:hover{
+      transform: translateY(20px);
+  }
+
+  .materia:before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(28, 44, 42, 0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+  
+  }
+
+  .materia:hover:before{
+      opacity: 1;
+  }
+
+  .materia img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .materia .info{
+      position: relative;
+      z-index: 3;
+      color: #fff;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: 0.5s all;
+  }
+
+  .materia:hover .info{
+      opacity: 1;
+      transform: translateY(0px);
+
+  }
+
+  .materia .info h3{
+      margin: 0;
+      font-size: 25px;
+      color: white;
+  } 
+
+  .materia .info p{
+      letter-spacing: 1px;
+      font-size: 20px;
+      margin-top: 8px;
+      margin-bottom: 20px;
+      color: white;
+  }
+
+  .materia .info .botao{
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      background: #fff;
+      color: black;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.4s ease-in-out;
+  }
+
+  .materia .info .botao:hover{
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+
+  }
+
+  .box{
+  margin-top: 40px;
+  width: 800px;
+  height: 500px;
+  }
+
+  .titulo{
+    display: block;
+   
+    
+   
+}
+.titulo:after {
+    content:"";
+    background: linear-gradient(to left, rgba(28, 44, 42, 0.5), rgba(150,201,61,1));
+    display: block;
+    height: 10px;
+    width: 800px;
+    
+    bottom: 0;
+}
+
+.materias2{
+  display: flex;
+  width: 100%;
+  height: 1000px;
+  justify-content: space-around;
+}
+
+
+/* BOTÕES DO KEVIN */
+
+
+.wrapper{
+    display: inline-flex;
+  }
+  .wrapper .icon{
+    margin: 0 20px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .icon span{
+    display: block;
+    height: 60px;
+    width: 60px;
+    background: #fff;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .icon span i{
+    line-height: 60px;
+    font-size: 25px;
+  }
+  .wrapper .icon .tooltip{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background: #fff;
+    color: #fff;
+    padding: 10px 18px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 25px;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .icon:hover .tooltip{
+    top: -70px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .icon .tooltip:before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50%) rotate(45deg);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .icon:hover span{
+    color: #fff;
+  }
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip{
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+  }
+  .wrapper .facebook:hover span,
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip:before{
+    background: #3B5999;
+  }
+  .wrapper .blog:hover span,
+  .wrapper .blog:hover .tooltip,
+  .wrapper .blog:hover .tooltip:before{
+    background: #376174;
+  }
+  .wrapper .instagram:hover span,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip:before{
+    background: #e1306c;
+  }
+  .wrapper .window:hover span,
+  .wrapper .window:hover .tooltip,
+  .wrapper .window:hover .tooltip:before{
+    background: #763cd3;
+  }
+  .wrapper .youtube:hover span,
+  .wrapper .youtube:hover .tooltip,
+  .wrapper .youtube:hover .tooltip:before{
+    background: #DE463B;
+  }
+  
+  .wrapper .home:hover span,
+  .wrapper .home:hover .tooltip,
+  .wrapper .home:hover .tooltip:before{
+    background: #333;
+  }
+  
+  
+    
