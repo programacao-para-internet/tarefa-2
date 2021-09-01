@@ -62,7 +62,7 @@ a{
 .texto{
   position: absolute;
   color: rgb(48, 45, 45);
-  font-size: 50px;
+  font-size: 40px;
   bottom: 30px;
   margin-left: 2%;
   margin-right: 3%;
@@ -89,11 +89,8 @@ a{
   height: auto; 
 }
 .img-materia-principal{
-  max-width: 500px;
-  max-height: 300px;
-  margin-left: 35%;
-  margin-right: 10%;
-  margin-top: 2%;
+  margin-left: 10%;
+  max-width: 90%;
 }
 .img-materia-externa{
   max-width: 500px;
@@ -101,7 +98,7 @@ a{
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
-  filter: grayscale(90%);
+  filter: brightness(50%);
 }
 .titulo-materia{
     margin-top: 0px;
@@ -119,6 +116,7 @@ a{
 .footer-table{
   width: 100%;
   font-size: 24px;
+
 }
 .linha-branco{
   height: 25px;
