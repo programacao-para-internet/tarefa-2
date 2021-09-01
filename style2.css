@@ -19,6 +19,12 @@ a{
 .header{
     width: 25%;
 }
+.fixo{
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 2;
+}
 .footer{
     width: 33%;
 }
@@ -49,17 +55,32 @@ a{
     margin-right: auto;
 }
 .img-materia{
-  max-width:500px;
+  max-width: 500px;
   max-height: 300px;
+  
 }
 .texto{
   position: absolute;
   color: rgb(48, 45, 45);
   font-size: 50px;
-  top: 400px;
+  bottom: 30px;
   margin-left: 2%;
   margin-right: 3%;
   font-style: bold;
+}
+.container {
+  position: relative;
+}
+.texto-materia-externa{
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  bottom: 10px;
+  margin-left: 2%;
+  margin-right: 5%;
+  font-weight: 600;
+  z-index: 2;
+  text-shadow: 2px -1px black;
 }
 .img-materia{
   max-width:300px;
@@ -72,7 +93,15 @@ a{
   max-height: 300px;
   margin-left: 35%;
   margin-right: 10%;
-  margin-top: 5%;
+  margin-top: 2%;
+}
+.img-materia-externa{
+  max-width: 500px;
+  max-height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  filter: grayscale(90%);
 }
 .titulo-materia{
     margin-top: 0px;
@@ -86,7 +115,6 @@ a{
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  
 }
 .footer-table{
   width: 100%;
@@ -219,7 +247,7 @@ a{
 
   .materia{
     
-    height: 500px;
+    height: 400px;
     padding: 2rem 1rem;
     background: #fff;
     position: relative;
@@ -337,6 +365,8 @@ a{
 
 
 .wrapper{
+    margin-top: 85px;
+    margin-bottom: 20px;
     display: inline-flex;
   }
   .wrapper .icon{
@@ -353,8 +383,8 @@ a{
   }
   .wrapper .icon span{
     display: block;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     background: #fff;
     border-radius: 50%;
     position: relative;
@@ -363,7 +393,7 @@ a{
     transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
   .wrapper .icon span i{
-    line-height: 60px;
+    line-height: 50px;
     font-size: 25px;
   }
   .wrapper .icon .tooltip{
@@ -382,7 +412,7 @@ a{
     transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
   .wrapper .icon:hover .tooltip{
-    top: -70px;
+    top: -60px;
     opacity: 1;
     pointer-events: auto;
   }
