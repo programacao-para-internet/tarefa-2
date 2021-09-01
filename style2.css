@@ -26,7 +26,11 @@ a{
   z-index: 2;
 }
 .footer{
-    width: 33%;
+    position: absolute;
+    background: rgba(150,201,61,1);
+    width: 100%;
+    transform: translate(-9px);
+    height: 7%;
 }
 .icone{
     width: 5%;
@@ -114,6 +118,7 @@ a{
   margin-right: auto;
 }
 .footer-table{
+  margin-left: 0px;
   width: 100%;
   font-size: 24px;
 
