@@ -9,7 +9,7 @@ a{
 }
 /* HEADER FIXO */
 .header-fixo{
-    background-color: rgba(150,201,61,1);
+    background-color:  rgb(36, 159, 175);
     color: white;
     width: 100%;
 }
@@ -27,10 +27,11 @@ a{
 }
 .footer{
     position: absolute;
-    background: rgba(150,201,61,1);
+    background:  rgb(36, 159, 175);
     width: 100%;
     transform: translate(-8px);
-    height: 7%;
+    height: 13%;
+    margin-bottom: 0;
 }
 .icone{
     width: 5%;
@@ -121,7 +122,7 @@ a{
   margin-left: 0px;
   width: 100%;
   font-size: 24px;
-  text-shadow: 1px 1px 1px black;
+  
 }
 .linha-branco{
   height: 25px;
@@ -209,7 +210,7 @@ a{
      display: flex;
      align-items: center;
      justify-content: center;
-     background-color: rgba(150,201,61,1);
+     background-color:  rgb(36, 159, 175);
   }
 
    .logo{
@@ -239,7 +240,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(150,201,61,1);
+    background-color:  rgb(36, 159, 175);
   }
 
   .materias{
@@ -271,7 +272,7 @@ a{
     display: block;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(28, 44, 42, 0.5), rgba(150,201,61,1));
+    background: linear-gradient(to bottom, rgba(28, 44, 42, 0.5), rgb(36, 159, 175));
     z-index: 2;
     transition: 0.5s all;
     opacity: 0;
@@ -348,7 +349,7 @@ a{
 }
 .titulo:after {
     content:"";
-    background: linear-gradient(to left, rgba(28, 44, 42, 0.5), rgba(150,201,61,1));
+    background: linear-gradient(to left, rgba(28, 44, 42, 0.5), rgb(36, 159, 175));
     display: block;
     height: 10px;
     width: 800px;
