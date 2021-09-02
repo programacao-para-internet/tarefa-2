@@ -41,7 +41,7 @@
   
   .fundo {
     display: grid;
-    grid-template-columns: 0.6fr 1.7fr 2.3fr;
+    grid-template-columns: 3.6fr 1.7fr 2.3fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -416,7 +416,7 @@
 .fundo{
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: 70vw;
 
 }
 
